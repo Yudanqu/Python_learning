@@ -10,9 +10,9 @@ from email.mime.text import MIMEText
 SMTPServer = "smtp.163.com"
 
 # 发邮件的地址
-Sender = "15033637173@163.com"
+Sender = "xxxxxxxxxx@163.com"
 # 发送者邮箱的密码
-passwd = "123456789a" # 授权密码，不能作为登录，仅能发
+passwd = "xxxxxxxxxxxxxxxx" # 授权密码，不能作为登录，仅能发
 
 
 
@@ -32,7 +32,7 @@ mailServer = smtplib.SMTP(SMTPServer,25) # 25是端口号，一般是邮件用�
 # 登录邮箱
 mailServer.login(Sender,passwd)
 # 发送邮件
-mailServer.sendmail(Sender,["15033637173@163.com","目标邮箱"],msg.as_string())
+mailServer.sendmail(Sender,["xxxxxxxxxxx@163.com","目标邮箱"],msg.as_string())
 # 退出邮箱
 mailServer.quit()
 
